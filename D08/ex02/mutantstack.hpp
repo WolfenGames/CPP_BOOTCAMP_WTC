@@ -16,6 +16,7 @@
 #include <vector>
 #include <list>
 #include <stack>
+#include <iterator>
 
 template<typename T>
 class MutantStack: public std::stack<T>
@@ -29,7 +30,7 @@ class MutantStack: public std::stack<T>
 			return *this;
 		}
 		~MutantStack(void){};
-		typedef typename std::vector<T>::iterator iterator;
+		typedef typename std::stack<T>::iterator iterator;
 		iterator	begin(void){return vec.begin();};
 		iterator	end(void){return vec.end();};
 		void		push(T x){vec.push_back(x);};
@@ -38,7 +39,7 @@ class MutantStack: public std::stack<T>
 		T			size(void){return vec.size();};
 
 	private:
-		std::vector<T>	vec;
+		std::stack<T>	vec;
 };
 
 #endif

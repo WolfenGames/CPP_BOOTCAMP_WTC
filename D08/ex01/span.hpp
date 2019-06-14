@@ -46,18 +46,18 @@ class	Span
 		};
 
 		Span(void);
-		Span(long);
+		Span(uint);
 		Span(Span&);
 		virtual ~Span(void);
 		Span &operator=(Span const&);
-		void			addNumber(long);
-		long			shortestSpan(void);
-		long			longestSpan(void);
+		void			addNumber(uint);
+		uint			shortestSpan(void);
+		uint			longestSpan(void);
 
 	private:
 
-		std::vector<long>	_store;
-		unsigned long		_size;
+		std::vector<uint>	_store;
+		uint				_size;
 };
 
 #endif
