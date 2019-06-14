@@ -27,7 +27,6 @@ class	Span
 		class MaxSizeException : public std::exception
 		{
 			public:
-				
 				MaxSizeException(void);
 				MaxSizeException(MaxSizeException const&);
 				virtual ~MaxSizeException(void) throw();
@@ -37,7 +36,6 @@ class	Span
 		class NotEnoughEntriesException : public std::exception
 		{
 			public:
-				
 				NotEnoughEntriesException(void);
 				NotEnoughEntriesException(NotEnoughEntriesException const &);
 				virtual ~NotEnoughEntriesException(void) throw();
